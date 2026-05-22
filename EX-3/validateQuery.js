@@ -9,6 +9,7 @@ export default function validateQuery(req, res, next) {
             return res.status(400).json({ error: 'minCredits must be an integer' });
         }
         req.query.minCredits = parsedMin;
+        
     }
 
     if (maxCredits !== undefined) {

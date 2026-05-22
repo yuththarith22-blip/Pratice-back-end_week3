@@ -23,6 +23,7 @@ app.get('/departments/:dept/courses', validateQuery, auth, (req, res) => {
         if (semester && String(c.semester).toLowerCase() !== String(semester).toLowerCase()) return false;
         if (instructor && !String(c.instructor).toLowerCase().includes(String(instructor).toLowerCase())) return false;
         return true;
+        
     });
 
     return res.json({ results, meta: { total: results.length } });

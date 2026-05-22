@@ -34,6 +34,7 @@ const courses = [
         credits: 3,
         instructor: 'Dr. Patel',
         semester: 'fall',
+        
     },
     {
         id: 'ECE301',
